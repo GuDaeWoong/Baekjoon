@@ -5,7 +5,7 @@ public class Solution {
         int answer = 0;
         String numStr = Integer.toString(n);
         char [] numArray = numStr.toCharArray();
-        for (int num : numArray) {
+        for (char num : numArray) {
             answer += (num-'0');
         }
         return answer;
