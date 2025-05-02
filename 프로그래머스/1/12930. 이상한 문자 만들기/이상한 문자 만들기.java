@@ -10,6 +10,9 @@
 //     }
 // }
 
+//입력값 〉   " read the explanation carefully "
+//기댓값 〉   " ReAd ThE ExPlAnAtIoN CaReFuLlY "
+
 
 class Solution {
     public String solution(String s) {
