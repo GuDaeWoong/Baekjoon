@@ -1,17 +1,16 @@
 import java.util.Arrays;
-
 class Solution {
-    public long solution(long n) { //118372
-
-        String str = Long.toString(n);
-        char[] charstr = str.toCharArray();
-        Arrays.sort(charstr);
-        char[] listchar = new char[charstr.length];
-        for (int i = 0; i < charstr.length; i++) {
-            listchar[i] = charstr[charstr.length - 1 - i];
+    public long solution(long n) {
+        String str=Long.toString(n);
+        char[] chararr=str.toCharArray();
+        String strarr = new String(chararr);
+        Arrays.sort(chararr);
+        
+        StringBuilder result = new StringBuilder();
+        for (int i = chararr.length - 1; i >= 0; i--) {
+            result.append(chararr[i]); 
         }
-        String resultString = new String(listchar);
 
-        return Long.parseLong(resultString);
+        return Long.parseLong(result.toString());
     }
 }
