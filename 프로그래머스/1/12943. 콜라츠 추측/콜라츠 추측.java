@@ -1,6 +1,6 @@
 class Solution {
     public int solution(int num) {
-        //주어진 수가 1인 경우에는 0
+        
         if (num == 1) {
             return 0;
         }
